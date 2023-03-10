@@ -129,4 +129,3 @@ dmypy.json
 .pyre/
 /asm_test/
 /marks.txt
-.gitignore
