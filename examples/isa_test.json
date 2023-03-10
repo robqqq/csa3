@@ -1,0 +1,27 @@
+[
+  {
+    "opcode": "ld",
+    "args": [6, 0]
+  },
+  {
+    "opcode": "ld",
+    "args": [7, 1]
+  },
+  {
+    "opcode": "add",
+    "args": [0, 1, 0]
+  },
+  {
+    "opcode": "st",
+    "args": [0, 6]
+  },
+  {
+    "opcode": "ld",
+    "args": [6, 2]
+  },
+  {
+    "opcode": "hlt"
+  },
+  10,
+  20
+]

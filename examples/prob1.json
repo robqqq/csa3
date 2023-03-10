@@ -1,0 +1,140 @@
+[
+  {
+    "opcode": "ld",
+    "args": [34, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [35, 2]
+  },
+  {
+    "opcode": "sub",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "be",
+    "args": [32]
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [36, 2]
+  },
+  {
+    "opcode": "mod",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "bne",
+    "args": [12]
+  },
+  {
+    "opcode": "ld",
+    "args": [33, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 2]
+  },
+  {
+    "opcode": "add",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "st",
+    "args": [0, 33]
+
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [37, 2]
+  },
+  {
+    "opcode": "mod",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "bne",
+    "args": [20]
+  },
+  {
+    "opcode": "ld",
+    "args": [33, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 2]
+  },
+  {
+    "opcode": "add",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "st",
+    "args": [0, 33]
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [38, 2]
+  },
+  {
+    "opcode": "mod",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "bne",
+    "args": [28]
+  },
+  {
+    "opcode": "ld",
+    "args": [33, 1]
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 2]
+  },
+  {
+    "opcode": "sub",
+    "args": [1, 2, 0]
+  },
+  {
+    "opcode": "st",
+    "args": [0, 33]
+  },
+  {
+    "opcode": "ld",
+    "args": [34, 1]
+  },
+  {
+    "opcode": "inc",
+    "args": [1, 0]
+  },
+  {
+    "opcode": "st",
+    "args": [0, 34]
+  },
+  {
+    "opcode": "jmp",
+    "args": [0]
+  },
+  {
+    "opcode": "hlt"
+  },
+  0,
+  1,
+  1000,
+  3,
+  5,
+  15
+]
