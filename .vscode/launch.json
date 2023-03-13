@@ -1,0 +1,34 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: текущий файл",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "machine.py",
+            "type": "python",
+            "request": "launch",
+            "program": "machine.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": "examples/prob1.json"
+        },
+        {
+            "name": "translator.py",
+            "type": "python",
+            "request": "launch",
+            "program": "translator.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["examples/prob1.cmm", "examples/prob1translator.json"]
+        }
+    ]
+}

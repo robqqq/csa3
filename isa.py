@@ -24,7 +24,7 @@ class Opcode(str, Enum):
 
 class Instr(TypedDict):
     opcode: Opcode
-    args: list[int]
+    args: list[int | str]
 
 
 Cell = Union[np.int32, Instr]

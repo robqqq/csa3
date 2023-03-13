@@ -1,14 +1,18 @@
 int sum = 0;
 int i = 1;
+int t = 0;
 
 while (i != 1000) {
-    if (i % 3 == 0) {
+    t = i % 3;
+    if (t == 0) {
         sum += i;
     }
-    if (i % 5 == 0) {
+    t = i % 5;
+    if (t == 0) {
         sum += i;
     }
-    if (i % 15 == 0) {
+    t = i % 15;
+    if (t == 0) {
         sum -= i;
     }
     i++;
