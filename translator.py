@@ -125,7 +125,8 @@ def translate_cmm_text(text: list[str]) -> Program:
     for i, l in enumerate(text):
         if l.find("==") == -1 and l.find("=") != -1 and l.find("!=") == -1 and l.find("+=") == -1 and l.find("-=") == -1:
             pass
-        elif 
+        elif True:
+            pass
     
     return prog
 
