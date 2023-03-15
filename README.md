@@ -15,3 +15,70 @@
 * port -- Ввод-вывод ISA port-mapped
 * prob1 -- If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
 The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+
+## Язык программирования
+
+``` ebnf
+program ::= statement | {statement ";"} statement
+
+statement ::= assign_statement
+            | if_statement
+            | while_statement
+            
+assign_statement    ::= id "=" a_expr
+if_statement        ::= "if" b_expr "{" {statement} "}"
+while_statement     ::= "while" b_expr "{" {statement} "}"
+
+a_expr ::= (int | id) | ((int | id) a_operator (int | id))
+b_expr ::= a_expr b_operator a_expr
+
+int ::= [0-9]+
+id ::= [A-Za-z_][A-Za-z0-9_]*
+string ::= \".*\"
+
+a_operator ::= "+" | "-" | "%"
+b_operator ::= "==" | "!="
+
+```
+
+Код выполняется последовательно. Возможности:
+
+- Объявление переменных и простые арифметические операции над ними: `a = 1; a = a + 2`. Трансляция сложных
+арифметических операций не реализована вследствие отсутствия необходимости для выполнения алгоритма по заданному варианту.
+- Цикл: `while <simple_condition> { ... }`.
+- Условия: `if <simple_condition> { ... }`
+
+Пример программы на языке:
+
+``` c
+sum = 0;
+i = 1;
+
+while i != 1000 {
+    if i % 3 == 0 {
+        sum = sum + i
+    };
+    if i % 5 == 0 {
+        sum = sum + i
+    };
+    if i % 15 == 0 {
+        sum = sum - i
+    };
+    i = i + 1
+}
+```
+
+## Организация памяти
+
+Модель памяти процессора:
+- Общая память программ и данных. Машинное слово -- 32 бита, знаковое. Реализуется списком данных типа Cell = Instr | np.int32, Instr - словарь, описывающий инструкцию, содержит опкод и список аргументов.
+
+## Система команд
+
+- Машинное слово - 32 бита, знаковое.
+- Память:
+    - Доступ к памяти осуществляется через инструкции LD и ST.
+    - Может быть записана из регистров общего назначения: R0-R3.
+    - Может быть прочитана в регистры общего назначения: R0-R3.
+- АЛУ:
+    

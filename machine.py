@@ -135,6 +135,12 @@ class DataPath:
     def wr(self):
         assert 0 <= self._alu < self._memory_size, "Invalid address"
         self.memory[self._alu] = self._bus2
+        
+    def input(self):
+        self._alu = sys.stdin.read(1)
+        
+    def output(self):
+        print(str(self._alu), end = "")
 
 
 class ControlUnit:
